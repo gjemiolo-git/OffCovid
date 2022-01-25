@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Main Page
+{% endblock %}
+
+{% block main %}
+<br><b><a style="font-size:35px;">Welcome to <a style="color:#0f538f;font-size:40px;">OffCovid</a><a style="font-size:40px;">!</a></a></b><br><br><br>
+<div><br>
+    <div class="some_text">
+        <br><img src="https://api.amsterdamsmartcity.com/img/update/featured-image/c_71247_d7c761be-28ca-4da8-a39c-5af3bac6446b.jpg?w=616&h=320&fit=max&s=8c37b6bc3f2a4622da1bbe070bf1b6fd"/>
+        <br><br><h4>All our app's features are in the navigation bar above, we hope you will find what you needed!</h4>
+    </div>
+
+    <div class="cases">
+        <br><br><br><h2 style="color:#404040;font-size:20px;">Daily Covid cases in Edinburgh: {{ perDayEH }}</h2>
+        <h2 style="color:#404040;font-size:20px;">Weekly Covid cases in Edinburgh: {{ perWeekEH }}</h2><br>
+
+        <h2 style="color:#404040;font-size:20px;">Daily Covid cases in the UK: {{ perDayUK }}</h2>
+        <h2 style="color:#404040;font-size:20px;">Weekly Covid cases in the UK: {{ perWeekUK }}</h2><br>Рађ<br>
+    </div>
+</div>
+
+{% endblock %}
+
