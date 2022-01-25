@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+PCR tests
+{% endblock %}
+
+{% block main %}
+
+<div class="section">
+<h3>If you did not know, a PCR test is the one you take if you have symptoms or if:</h3>
+    <ul class="pcr">
+        <li>you’ve been in contact with someone who’s tested positive</li>
+        <li>you’ve been asked to get a test by a local council or someone from NHS Test and Trace</li>
+        <li>a GP or other health professional has asked you to get a test</li>
+        <li>you’re taking part in a government pilot project</li>
+        <li>you’ve been asked to get a test to confirm a positive result</li>
+        <li>you’ve received an unclear result and were told to get a second test</li>
+        <li>you need to get a test for someone you live with who has symptoms</li>
+        <li>you’re in the National Tactical Response Group</li>
+    </ul>
+</div>
+<br><img src='http://nanoporetech.com/sites/default/files/s3/news/covid-pcr-in-lab.jpg' alt="NHS LOGO" border="0" style="max-width:80%"></center><br>
+<br><div class="section">
+    <p>
+    To do a PCR test you will need to book a PCR test appointement by clicking <a href="https://self-referral.test-for-coronavirus.service.gov.uk/antigen/essential-worker">here</a>.<br>
+    Whilst if you don't have symptoms or you need a test to travel you should book a lateral flow test (see the <a href="https://differenttimezone.pythonanywhere.com/lateral">Lateral Flow Test Information</a> section).<br>
+    </p>
+</div>
+
+{% endblock %}
+

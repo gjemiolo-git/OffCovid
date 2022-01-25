@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Vaccination
+{% endblock %}
+
+
+{% block main %}
+
+
+
+<img src='https://www.klpa.uk/wp-content/uploads/2020/12/mail-9.jpg' alt="Edinburgh Napier University" border="0" style="max-width:65%"></a>
+<p><br>Pretty clear isn't it? <b> Wash your hands</b>, <b>cover your face</b>, <b>keep distances</b> but most important:<br><br><br>
+</p>
+
+<div class="section">
+    <h2>Get Vaccinated!</h2><br>
+    <ul class="premises">
+    <li>Authorized COVID-19 vaccines can help protect you from COVID-19.</li>
+    <li>You should get a COVID-19 vaccine as soon as you can.</li>
+    <li>Once you are fully vaccinated, you may be able to start doing some things that you had stopped doing because of the pandemic.</li>
+    </ul>
+
+    <img src="https://freepngimg.com/thumb/web_design/24675-6-down-arrow-hd.png" id = "arrow" style="max-width:5%" border="0" onclick="appear()"><br>
+    <p id="hidden"></p>
+
+</div>
+<script>
+function appear() {
+    document.getElementById('arrow').src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HD_transparent_picture.png/1200px-HD_transparent_picture.png'
+    document.getElementById("hidden").innerHTML = "Wear a mask.\nIf you are not fully vaccinated and aged 2 or older, you should wear a mask in indoor public places.\nIn general, you do not need to wear a mask in outdoor settings.\nIn areas with high numbers of COVID-19 cases, consider wearing a mask in crowded outdoor settings and for activities with close contact with others who are not fully vaccinated.\nPeople who have a condition or are taking medications that weaken their immune system may not be fully protected even if they are fully vaccinated. They should continue to take all precautions recommended for unvaccinated people, including wearing a well-fitted mask, until advised otherwise by their healthcare provider.\nIf you are fully vaccinated, to maximize protection from the Delta variant and prevent possibly spreading it to others, wear a mask indoors in public if you are in an area of substantial or high transmission.\nIf you are fully vaccinated, see When You’ve Been Fully Vaccinated.\nWearing a mask over your nose and mouth is required on planes, buses, trains, and other forms of public transportation traveling into, within, or out of the United States and while indoors at U.S. transportation hubs such as airports and stations. Travelers are not required to wear a mask in outdoor areas of a conveyance (like on open deck areas of a ferry or the uncovered top deck of a bus).";
+}
+</script>
+
+{% endblock %}
+
